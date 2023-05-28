@@ -1,0 +1,11 @@
+kw1
+SELECT `pracownicy`.`id`, `pracownicy`.`imie`, `pracownicy`.`nazwisko`, `pracownicy`.`adres`, `pracownicy`.`miasto` FROM `pracownicy` WHERE `pracownicy`.`id` = "1";
+
+kw2
+SELECT `pracownicy`.`imie`, `pracownicy`.`nazwisko` FROM `pracownicy` WHERE `pracownicy`.`czyRODO` = "0";
+
+kw3
+SELECT `pracownicy`.`id`, `pracownicy`.`nazwisko` FROM `pracownicy` WHERE `pracownicy`.`czyBadania` = "0" AND `pracownicy`.`dataUr` BETWEEN '1970-01-01' AND '1979-12-31';
+
+kw4
+ALTER TABLE `pracownicy` ADD COLUMN umiejetnosci varchar(30);
